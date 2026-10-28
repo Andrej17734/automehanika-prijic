@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automehanika Prijić</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <header class="sticky top-0 z-10 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
+            <a href="index.html" class="flex items-center gap-2 font-display text-xl font-extrabold tracking-tight text-red-700 hover:text-red-800">
+                <img src="slike/logo.svg" alt="" class="w-8 h-8">
+                Automehanika Prijić
+            </a>
+            <nav class="flex gap-6 items-center">
+                <a href="index.html" class="text-red-700 font-medium hover:text-red-800">Naslovnica</a>
+                <a href="usluge.html" class="font-medium hover:text-red-700">Usluge</a>
+                <a href="kontakt.html" class="font-medium hover:text-red-700">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-gradient-to-r from-slate-900 via-slate-800 to-red-700 text-white">
+            <div class="max-w-5xl mx-auto px-4 py-16 text-center">
+                <h1 class="font-display text-3xl md:text-5xl font-extrabold mb-4 tracking-tight">Vaše vozilo u sigurnim rukama.</h1>
+                <p class="text-lg text-slate-200 mb-8 max-w-2xl mx-auto">
+                    Profesionalni automehanički servis za osobne i poslovne automobile. Brza dijagnostika, pouzdani popravci i kvalitetna usluga od 2010. godine.
+                </p>
+                <a href="kontakt.html"
+                    class="inline-block bg-red-700 text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-800 transition-colors duration-200">
+                    Zakaži servis
+                </a>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-4 py-12">
+            <h2 class="font-display text-2xl font-bold mb-6 text-slate-900">Usluge</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:border-red-500 transition-colors">
+                    <h3 class="font-display text-lg font-semibold mb-2 text-slate-900">Redovni servis</h3>
+                    <p class="text-gray-600 mb-4">
+                        Zamjena ulja, filtera i provjera svih bitnih komponenti kako bi Vaše vozilo ostalo sigurno i pouzdano na cesti.
+                    </p>
+                    <p class="text-red-700 font-bold">od 120 EUR</p>
+                </article>
+
+                <article class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:border-red-500 transition-colors">
+                    <h3 class="font-display text-lg font-semibold mb-2 text-slate-900">Kočioni sustav</h3>
+                    <p class="text-gray-600 mb-4">
+                        Dijagnostika, servis i zamjena kočnica i diskova s preciznim podešavanjem za maksimalnu sigurnost.
+                    </p>
+                    <p class="text-red-700 font-bold">od 180 EUR</p>
+                </article>
+
+                <article class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:border-red-500 transition-colors">
+                    <h3 class="font-display text-lg font-semibold mb-2 text-slate-900">Dijagnostika</h3>
+                    <p class="text-gray-600 mb-4">
+                        Napredna analiza motora, električnih sustava i pogonskih sklopova kako bismo brzo pronašli uzrok kvara.
+                    </p>
+                    <p class="text-red-700 font-bold">od 90 EUR</p>
+                </article>
+            </div>
+
+            <a href="usluge.html" class="inline-block mt-8 font-semibold text-red-700 hover:text-red-800 hover:underline">
+                Pogledajte termine svih usluga →
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-300">
+        <div class="max-w-5xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between gap-4 text-sm">
+            <p>Automehanika Prijić, Hrvatske državnosti 28, Koprivnica</p>
+            <p>Ponedjeljak – subota, 8:00 – 18:00</p>
+        </div>
+    </footer>
+</body>
+</html>
